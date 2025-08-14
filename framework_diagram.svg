@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E86AB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A23B72;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="basicGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F18F01;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#C73E1D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="intermediateGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2E8B57;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#006400;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="advancedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4169E1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E90FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1200" height="60" fill="url(#headerGrad)"/>
+  <text x="600" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    OpenFOAM Programming Tutorials Framework
+  </text>
+
+  <!-- Learning Path Arrow -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" 
+     refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+  <path d="M 100 120 Q 600 100 1100 120" stroke="#333" stroke-width="3" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="600" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    Learning Progression
+  </text>
+
+  <!-- Basic Level -->
+  <rect x="50" y="140" width="280" height="200" rx="10" fill="url(#basicGrad)" opacity="0.9"/>
+  <text x="190" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Basic Level (0-5)
+  </text>
+  
+  <text x="60" y="190" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 0: Hello World
+  </text>
+  <text x="60" y="210" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 1: Input/Output
+  </text>
+  <text x="60" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 2: Command Line Args
+  </text>
+  <text x="60" y="250" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 3: Understanding Mesh
+  </text>
+  <text x="60" y="270" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 4: Basic Field Operations
+  </text>
+  <text x="60" y="290" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 5: Parallel Computing
+  </text>
+  
+  <text x="60" y="320" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#FFE4B5">
+    Foundation concepts, basic syntax
+  </text>
+
+  <!-- Intermediate Level -->
+  <rect x="360" y="140" width="280" height="200" rx="10" fill="url(#intermediateGrad)" opacity="0.9"/>
+  <text x="500" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Intermediate Level (6-11)
+  </text>
+  
+  <text x="370" y="190" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 6: Custom Classes
+  </text>
+  <text x="370" y="210" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 7: Custom Libraries
+  </text>
+  <text x="370" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 8: Custom Boundary Conditions
+  </text>
+  <text x="370" y="250" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 9: Runtime Post-processing
+  </text>
+  <text x="370" y="270" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 10: Transport Equation
+  </text>
+  <text x="370" y="290" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 11: Modifying Mesh
+  </text>
+  
+  <text x="370" y="320" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#E0FFE0">
+    Custom development, extending OpenFOAM
+  </text>
+
+  <!-- Advanced Level -->
+  <rect x="670" y="140" width="280" height="200" rx="10" fill="url(#advancedGrad)" opacity="0.9"/>
+  <text x="810" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white">
+    Advanced Level (12-16)
+  </text>
+  
+  <text x="680" y="190" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 12: Momentum Source
+  </text>
+  <text x="680" y="210" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 13: Wave Equation Solver
+  </text>
+  <text x="680" y="230" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 14: SIMPLE Algorithm
+  </text>
+  <text x="680" y="250" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 15: Discretisation Schemes
+  </text>
+  <text x="680" y="270" font-family="Arial, sans-serif" font-size="12" fill="white">
+    • Tutorial 16: Particle Tracking
+  </text>
+  
+  <text x="680" y="310" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#E6F3FF">
+    Advanced solvers, numerical methods,
+  </text>
+  <text x="680" y="325" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#E6F3FF">
+    specialized applications
+  </text>
+
+  <!-- Key Components -->
+  <rect x="50" y="380" width="900" height="180" rx="10" fill="#F5F5F5" stroke="#CCC" stroke-width="2"/>
+  <text x="500" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#333">
+    Key Framework Components
+  </text>
+
+  <!-- Component boxes -->
+  <rect x="70" y="420" width="200" height="60" rx="5" fill="#E8F4FD" stroke="#4169E1" stroke-width="1"/>
+  <text x="170" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Code Structure
+  </text>
+  <text x="80" y="455" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • C++ source files (.C)
+  </text>
+  <text x="80" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • Header files (.H)
+  </text>
+
+  <rect x="290" y="420" width="200" height="60" rx="5" fill="#F0F8E8" stroke="#2E8B57" stroke-width="1"/>
+  <text x="390" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Build System
+  </text>
+  <text x="300" y="455" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • Make/ directories
+  </text>
+  <text x="300" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • wmake compilation
+  </text>
+
+  <rect x="510" y="420" width="200" height="60" rx="5" fill="#FFF8E8" stroke="#F18F01" stroke-width="1"/>
+  <text x="610" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Test Cases
+  </text>
+  <text x="520" y="455" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • testCase/ directories
+  </text>
+  <text x="520" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • Allrun scripts
+  </text>
+
+  <rect x="730" y="420" width="200" height="60" rx="5" fill="#F8E8F8" stroke="#A23B72" stroke-width="1"/>
+  <text x="830" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#333">
+    Automation
+  </text>
+  <text x="740" y="455" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • Allwmake/Allwclean
+  </text>
+  <text x="740" y="470" font-family="Arial, sans-serif" font-size="10" fill="#666">
+    • testAll script
+  </text>
+
+  <!-- File Structure Section -->
+  <rect x="70" y="500" width="860" height="50" rx="5" fill="#F9F9F9" stroke="#DDD" stroke-width="1"/>
+  <text x="500" y="520" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">
+    Typical Tutorial Structure
+  </text>
+  <text x="80" y="540" font-family="Arial, sans-serif" font-size="11" fill="#666">
+    OFtutorialXX_description/ → [Allwmake, Allwclean, Make/, *.C, *.H] → testCase/ → [Allrun, 0/, constant/, system/]
+  </text>
+
+  <!-- Version Support -->
+  <rect x="50" y="580" width="900" height="80" rx="10" fill="#E6F7FF" stroke="#1890FF" stroke-width="2"/>
+  <text x="500" y="605" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    OpenFOAM Version Support
+  </text>
+  <text x="500" y="625" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    Current: OpenFOAM 9 | Legacy: 3.0.1, 5.x, 6, 7, 8 (in OldReleases/)
+  </text>
+  <text x="500" y="645" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#666">
+    Backwards compatibility maintained for educational purposes
+  </text>
+
+  <!-- Usage Instructions -->
+  <rect x="50" y="680" width="900" height="80" rx="10" fill="#FFF7E6" stroke="#FA8C16" stroke-width="2"/>
+  <text x="500" y="705" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    Quick Start
+  </text>
+  <text x="500" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">
+    ./Allwmake → cd testCase → ./Allrun
+  </text>
+  <text x="500" y="745" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-style="italic" fill="#666">
+    Each tutorial is self-contained with extensive code comments for learning
+  </text>
+
+</svg>

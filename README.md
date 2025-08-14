@@ -6,6 +6,12 @@ approachable than most of the materials available on-line, which tend to assume
 that the user is proficient in the C++ programming language. Please see below for
 a brief summary of what each individual tutorial covers and how to use it.
 
+## Framework Overview
+
+![OpenFOAM Programming Tutorials Framework](framework_diagram.svg)
+
+The tutorials are organized in three progressive levels: Basic (0-5), Intermediate (6-11), and Advanced (12-16), each building upon the concepts learned in previous tutorials.
+
 Current version of the tutorials is compatibile with the following OpenFOAM versions
 from the https://openfoam.org/ branch:
 - OpenFOAM 9
